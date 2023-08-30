@@ -1,12 +1,7 @@
-// This is an example of how you could add a hover effect using JavaScript
-const icons = document.querySelectorAll('.icons a');
+let menuBtn = document.querySelector('#menu-btn');
+let navbar = document.querySelector('.header .flex .navbar');
 
-icons.forEach(icon => {
-  icon.addEventListener('mouseover', () => {
-    icon.style.transform = 'scale(1.2)';
-  });
-  
-  icon.addEventListener('mouseout', () => {
-    icon.style.transform = 'scale(1)';
-  });
-});
+menuBtn.oneclick = () =>{
+    menuBtn.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+} 
